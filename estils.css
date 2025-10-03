@@ -1,0 +1,42 @@
+/* Estilo global para el cuerpo */
+p {
+  color: green; /* todos los párrafos en verde */
+}
+
+/* Estilo por id */
+#titulo {
+  font-size: 36px; /* tamaño más grande */
+  text-decoration: underline;
+}
+
+/* Estilos por clases */
+.texto-importante {
+  color: red;
+  font-weight: bold;
+}
+.rojo { color: red; }
+.grande { font-size: 24px; }
+.negrita { font-weight: bold; }
+.subrayado { text-decoration: underline; }
+
+/* Estilos para la lista */
+ul li:first-child { color: red; }
+ul li:nth-child(2) { color: green; }
+ul li:last-child { color: blue; }
+
+/* Estilo para enlaces */
+a:hover {
+  color: orange; /* cambia color al pasar el ratón */
+  cursor: pointer;
+}
+
+/* Pseudoelementos para añadir símbolos a los párrafos */
+p::before {
+    content: "➤ ";
+    color: blue;
+}
+
+p::after {
+  content: " ✔";
+  color: green;
+}
